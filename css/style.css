@@ -1,0 +1,210 @@
+/* Estilos generales */
+
+body {
+  background-color: #ffffff; /* Color de fondo del cuerpo */
+  color: #ffffff; /* Color del texto */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+}
+
+a {
+  color: #ffffff; /* Color de los enlaces */
+  text-decoration: none; /* Sin decoración de texto en los enlaces */
+}
+
+
+/* Barra de navegación */
+
+header {
+  background-color: #66bfff; /* Color de fondo del encabezado */
+  padding: 10px; /* Espaciado interno del encabezado */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  background-color: transparent; /* Fondo transparente de los botones de navegación */
+  border: none; /* Sin borde en los botones de navegación */
+  padding: 5px 10px; /* Espaciado interno de los botones de navegación */
+  margin-left: 10px; /* Margen izquierdo de los botones de navegación */
+  cursor: pointer; /* Cambiar el cursor a un puntero al pasar por encima de los botones */
+}
+
+.grow {
+  transition: transform 0.5s, color 0.1s; /* Transición de animación para transformar y cambiar el color */
+  -webkit-transition: transform 0.5s, color 0.1s;
+  -moz-transition: transform 0.5s, color 0.1s;
+}
+
+.grow:hover {
+  transform: scale3d(1.5, 1.5, 0.3); /* Escala el botón al pasar el cursor por encima */
+  -webkit-transform: scale3d(1.5, 1.5, 0.3);
+  -moz-transform: scale3d(1.5, 1.5, 0.3);
+}
+
+/* Sección principal */
+
+section {
+  margin: 100px; /* Margen exterior de la sección principal */
+}
+
+.tituloprincipal {
+  display: block;
+  font-size: 60px; /* Tamaño de fuente del título principal */
+  margin-bottom: 50px; /* Margen inferior del título principal */
+  color: #ffffff;
+  line-height: 0.5;
+}
+
+.tituloprincipal span {
+  display: block; /* Convertir cada palabra en un bloque separado */
+}
+
+.tituloprincipal span:last-of-type {
+  color: #66bfff; /* Color del texto "es hoy" (azul) */
+}
+
+article {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  border-radius: 0%; /* Borde redondeado de la imagen */
+  clip-path: circle(60%); /* Recorta la imagen en forma de círculo */
+  width: 500px; /* Ancho de la imagen */
+  margin-right: 0px; /* Margen derecho de la imagen */
+  position: relative; /* Establece la posición relativa */
+  top: 0px; /* Mueve la imagen 20px hacia abajo desde su posición original */
+  left: 100px; /* Mueve la imagen 50px hacia la derecha desde su posición original */
+}
+
+h2 {
+  color: #66bfff; /* Color del título */
+}
+
+.float {
+  transition: transform 0.5s, color 0.1s; /* Transición de animación para transformar y cambiar el color */
+  -webkit-transition: transform 0.5s, color 0.1s;
+  -moz-transition: transform 0.5s, color 0.1s;
+}
+
+.float:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000; /* Sombra al pasar el cursor por encima */
+  transform: translate(0px, 5px); /* Desplaza ligeramente el botón hacia abajo */
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
+}
+
+/* Pie de página */
+
+footer {
+  background-color: #66bfff; /* Color de fondo del pie de página */
+  padding: 10px; /* Espaciado interno del pie de página */
+  color: #ffffff; /* Color del texto en el pie de página */
+}
+
+.icono-whatsapp {
+  width: 40px; /* Ancho del ícono de WhatsApp */
+  height: 40px; /* Altura del ícono de WhatsApp */
+  top: -5px;
+  left: 35px;  
+
+}
+
+section article .float {
+  background-color: #66bfff; /* Color de fondo del botón flotante */
+  color: #ffffff; /* Color del texto del botón flotante */
+  padding: 10px 20px; /* Espaciado interno del botón flotante */
+  font-size: 60px; /* Tamaño de fuente del botón flotante */
+  margin-top: 10px; /* Margen superior del botón flotante */
+}
+
+section article .float:hover {
+  transform: scale(1.2); /* Escala el botón flotante al pasar el cursor por encima */
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor por encima */
+}
+
+section ul {
+  color: #000000; /* Color del texto en las listas de la sección */
+}
+
+.What {
+  color: #000000;
+}
+
+.boxblack {
+  display: flex;
+  position: relative;
+}
+
+.boxblack::before {
+  content: "";
+  position: absolute;
+  top: 100;
+  left: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 1;
+  z-index: 1;
+}
+
+.boxblack article {
+  position: relative;
+  z-index: 1;
+}
+
+.tituloprincipal {
+  font-size: 50px; /* Tamaño de fuente del título principal */
+  margin-bottom: 0px; /* Margen inferior del título principal */
+  margin-left: 100px; /* Mover el título hacia la izquierda */
+}
+
+section article .float {
+  position: absolute;
+  top: 170px; /* Ajusta la posición vertical */
+  left: auto px; /* Ajusta la posición horizontal */
+  right: 0px;
+  font-size: 40px;
+  background-color: #66bfff;
+  color: #ffffff;
+  padding: 5px 10px; /* Ajusta el espaciado interno del botón */
+  font-size: 25px; /* Ajusta el tamaño de fuente del botón */
+  margin-top: 10px;
+  width: 120px; /* Ajusta el ancho del botón */
+  height: 33px; /* Ajusta la altura del botón */
+  
+}
+
+.ayuda {
+  color: #000000;
+
+}
+
+.subtitulo1 {
+  color: #9B9B9B;
+  font-size: 10px;
+  position: absolute;
+  top: 230px;
+  left: 600px;  
+}
+
+.Contacto{
+  display: flex;
+  align-items: center;
+}
+
+aside {
+  margin-left: 1000px;
+  margin-top: 20px; /* Ajusta el valor según sea necesario para bajar el <aside> */
+}
+
+aside + * {
+  margin-top: -150px; /* Ajusta el valor según sea necesario para compensar el margen superior del <aside> */
+}
+
+.contacto{
+  color: black;
+}
+

@@ -1,0 +1,105 @@
+/* Estilos generales */
+
+body {
+  background-color: #ffffff;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Barra de navegación */
+
+header {
+  background-color: #66bfff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.grow {
+  transition: transform 0.5s, color 0.1s;
+  -webkit-transition: transform 0.5s, color 0.1s;
+  -moz-transition: transform 0.5s, color 0.1s;
+}
+
+.grow:hover {
+  transform: scale3d(1.5, 1.5, 0.3);
+  -webkit-transform: scale3d(1.5, 1.5, 0.3);
+  -moz-transform: scale3d(1.5, 1.5, 0.3);
+}
+
+/* Sección principal */
+
+main {
+  margin: 100px;
+}
+
+h2 {
+  color: #66bfff;
+}
+
+ol {
+  color: #000000;
+}
+
+/* Pie de página */
+
+footer {
+  background-color: #66bfff;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.icono-whatsapp {
+  width: 40px;
+  height: 40px;
+  top: -5px;
+  left: 35px;
+}
+
+.contacto {
+  color: black;
+}
+
+/* Estilos específicos de la página de ayuda */
+
+#ayuda-title {
+  font-size: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#ayuda-list {
+  margin-left: 50px;
+  font-size: 16px;
+}
+
+#ayuda-list li {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+aside {
+  margin-left: 1000px;
+  margin-top: 20px; /* Ajusta el valor según sea necesario para bajar el <aside> */
+}
+
+aside + * {
+  margin-top: -150px; /* Ajusta el valor según sea necesario para compensar el margen superior del <aside> */
+}
+
+.ayuda {
+  color: #000000;
+}

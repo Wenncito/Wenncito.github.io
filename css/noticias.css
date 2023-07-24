@@ -1,0 +1,314 @@
+/* Estilos generales */
+
+body {
+    background-color: #ffffff;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  /* Barra de navegación */
+  
+  header {
+    background-color: #66bfff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .grow {
+    transition: transform 0.5s, color 0.1s;
+    -webkit-transition: transform 0.5s, color 0.1s;
+    -moz-transition: transform 0.5s, color 0.1s;
+  }
+  
+  .grow:hover {
+    transform: scale3d(1.5, 1.5, 0.3);
+    -webkit-transform: scale3d(1.5, 1.5, 0.3);
+    -moz-transform: scale3d(1.5, 1.5, 0.3);
+  }
+
+  /* Pie de página */
+  
+  footer {
+    background-color: #66bfff;
+    padding: 10px;
+    color: #ffffff;
+  }
+  
+  .icono-whatsapp {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: 45px;  
+  }
+  
+  section article .float {
+    background-color: #66bfff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 60px;
+    margin-top: 10px;
+  }
+  
+  section article .float:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  section ul {
+    color: #000000;
+  }
+  
+  .What {
+    color: #000000;
+  }
+  
+  .boxblack {
+    display: flex;
+    position: relative;
+  }
+  
+  .boxblack::before {
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 100;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .boxblack article {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .tituloprincipal {
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+  }
+  
+  section article .float {
+    position: absolute;
+    top: 170px;
+    left: auto px;
+    right: 0px;
+    font-size: 40px;
+    background-color: #66bfff;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 25px;
+    margin-top: 10px;
+    width: 120px;
+    height: 33px;
+  }
+  
+  .ayuda {
+    color: #000000;
+  }
+  
+  .subtitulo1 {
+    color: #9B9B9B;
+    font-size: 10px;
+    position: absolute;
+    top: 230px;
+    left: 600px;  
+  }
+  
+  /* Estilos para el video */
+section.tuto video {
+  width: 800px; /* Ajusta el ancho del video */
+  height: auto; /* Ajusta la altura automáticamente */
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -50px;
+}
+
+.Respuesta{
+  color: black;
+  position: relative;
+  top: -90px;
+  left: -100px;
+  font-size: 18px;
+}
+
+.Contacto {
+  display: flex;
+  align-items: center;
+}
+
+aside {
+  margin-left: 1000px;
+  margin-top: 20px; /* Ajusta el valor según sea necesario para bajar el <aside> */
+}
+
+aside + * {
+  margin-top: -150px; /* Ajusta el valor según sea necesario para compensar el margen superior del <aside> */
+}
+
+.contacto {
+  color: black;
+}
+/* Estilos generales */
+
+body {
+    background-color: #ffffff;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  /* Barra de navegación */
+  
+  header {
+    background-color: #66bfff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .grow {
+    transition: transform 0.5s, color 0.1s;
+    -webkit-transition: transform 0.5s, color 0.1s;
+    -moz-transition: transform 0.5s, color 0.1s;
+  }
+  
+  .grow:hover {
+    transform: scale3d(1.5, 1.5, 0.3);
+    -webkit-transform: scale3d(1.5, 1.5, 0.3);
+    -moz-transform: scale3d(1.5, 1.5, 0.3);
+  }
+  
+  /* Pie de página */
+  
+  footer {
+    background-color: #66bfff;
+    padding: 10px;
+    color: #ffffff;
+  }
+  
+  .icono-whatsapp {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: 45px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  section h2 {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  section ul {
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  section li {
+    margin-left: 20px;
+  }
+  
+  /* Estilos específicos para el contenido dentro de <main> */
+  
+  main {
+    margin: 20px;
+  }
+  
+  main section {
+    background-color: #66bfff31;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  main h3 {
+    color: #000000;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  main p {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  main ul {
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  main li {
+    margin-left: 20px;
+  }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  h3 {
+    animation: blink 3s infinite;
+  }
+  @keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+  }
+  
+  h3 {
+    animation: rainbow 5s infinite;
+  }
+  

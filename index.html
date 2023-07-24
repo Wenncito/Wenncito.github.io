@@ -8,6 +8,25 @@
     <meta name="keywords" content="AuNet, descargar AuNet, soporte técnico">
     <link rel="stylesheet" href="./css/style.css">
     <title>AuNet</title>
+    <script>
+        // Función para detectar si el usuario está accediendo desde un dispositivo móvil
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+    
+        // Función para redireccionar si es un dispositivo móvil
+        function redirectToMobileMessage() {
+            if (isMobileDevice()) {
+                window.location.href = "errorfon.html";
+            }
+        }
+    
+        // Ejecutar la función cuando se cargue la página
+        window.onload = function() {
+            redirectToMobileMessage();
+        };
+    </script>
+    
 </head>
 <body>
     <header>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AUNET</title>
+    <link rel="stylesheet" href="/css/stylefrom.css">
+</head>
+<body>
+    <header>
+        <h1>AUNET</h1>
+        <nav>
+            <a href="/index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Registro</h2>
+
+        <form action="guardar.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="Apellido_paterno">Apellido paterno:</label>
+            <input type="text" name="Apellido_paterno" id="Apellido_paterno" required><br>
+
+            <label for="Apellido_materno">Apellido Materno:</label>
+            <input type="text" name="Apellido_materno" id="Apellido_materno" required><br>
+
+            <label for="correo">Correo:</label>
+            <input type="email" name="correo" id="correo" placeholder="tu correo" autocomplete="email" required><br>
+
+            <label for="Telefono">Numero de Telefono:</label>
+            <input type="tel" name="Telefono" id="Telefono" autocomplete="tel" required><br>
+
+            <input type="submit" value="Guardar">
+        </form>
+    </main>
+</body>
+</html>

